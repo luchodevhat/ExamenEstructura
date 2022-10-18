@@ -2,7 +2,7 @@ package Ejercicio1;
 
 import javax.swing.JOptionPane;
 
-public class Banco {
+public class Soda {
 
     public static void menuPrincipal() {
         Cola fila1 = new Cola();
@@ -32,8 +32,8 @@ public class Banco {
                                 + "(2) si no sufre de una discapacidad"));
                 
                 if (discapacidad == 1) {
-                    Cliente newCliente = new Cliente(nombre,cedula,true);
-                    fila1.encolaD(new Nodo(newCliente));
+                    //Cliente newCliente = new Cliente(nombre,cedula,true); //Agregar el producto y el total
+                    //fila1.encolaD(new Nodo(newCliente));
                     System.out.println(fila1.toString());
                     
                     respuesta2 = Integer.parseInt(JOptionPane.
@@ -47,8 +47,8 @@ public class Banco {
                     break;
                     
                 }else if (discapacidad == 2) {
-                    Cliente newCliente = new Cliente(nombre,cedula,false);
-                    fila1.encola(new Nodo(newCliente));
+                    //Cliente newCliente = new Cliente(nombre,cedula,false); //Agregar el producto y el total
+                    //fila1.encola(new Nodo(newCliente));
                     System.out.println(fila1.toString());
                     respuesta2 = Integer.parseInt(JOptionPane.
                             showInputDialog("Ingresa (1) si deseas agregar otro "
