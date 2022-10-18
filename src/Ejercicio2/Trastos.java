@@ -4,12 +4,10 @@ package Ejercicio2;
 
 public class Trastos {
     private int platosC;
-    private int vasosC;
     private int cubiertos;
 
-    public Trastos(int platosC, int vasosC, int cubiertos) {
+    public Trastos(int platosC, int cubiertos) {
         this.platosC = platosC;
-        this.vasosC = vasosC;
         this.cubiertos = cubiertos;
     }
 
@@ -21,13 +19,6 @@ public class Trastos {
         this.platosC = platosC;
     }
 
-    public int getVasosC() {
-        return vasosC;
-    }
-
-    public void setVasosC(int vasosC) {
-        this.vasosC = vasosC;
-    }
 
     public int getCubiertos() {
         return cubiertos;
@@ -39,6 +30,6 @@ public class Trastos {
 
     @Override
     public String toString() {
-        return "Trastos{" + "platosC=" + platosC + ", vasosC=" + vasosC + ", cubiertos=" + cubiertos + '}';
+        return "Trastos{" + "platosC=" + platosC + ", cubiertos=" + cubiertos + '}';
     }
 }

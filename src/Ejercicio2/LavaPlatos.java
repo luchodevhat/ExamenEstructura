@@ -20,8 +20,7 @@ public class LavaPlatos {
          "Ingresa (2) si deseas salir del simulador"));
             if (respuesta == 1) {
                 respuesta = Integer.parseInt(JOptionPane.
-                        showInputDialog("Ingresa (1) si deseas ingresar Platos \n"
-                                + "Ingresa (2) si deseas ingresar Vasos"));
+                        showInputDialog("Ingresa (1) si deseas ingresar Platos"));
 
                 if (respuesta == 1) {
                     platos = Integer.parseInt(JOptionPane.
@@ -29,19 +28,7 @@ public class LavaPlatos {
                     cubiertos = Integer.parseInt(JOptionPane.
                             showInputDialog("Cuantos cubiertos deseas ingresar:"));
                     
-                    Trastos platos1 = new Trastos(platos, 0, cubiertos);
-                    System.out.println("");
-                    System.out.println("PLATOS ACOMODADOS");
-                    miPila.push(platos1);
-                    System.out.println("");
-                    
-                } else {
-                    vasos = Integer.parseInt(JOptionPane.
-                            showInputDialog("Cuantos Vasos deseas ingresar:"));
-                    cubiertos = Integer.parseInt(JOptionPane.
-                            showInputDialog("Cuantos cubiertos deseas ingresar:"));
-                    
-                    Trastos platos1 = new Trastos(0, vasos, cubiertos);
+                    Trastos platos1 = new Trastos(platos, cubiertos);
                     System.out.println("");
                     System.out.println("PLATOS ACOMODADOS");
                     miPila.push(platos1);
