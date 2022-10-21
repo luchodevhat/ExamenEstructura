@@ -1,13 +1,11 @@
 package Ejercicio1;
 
-import javax.swing.JOptionPane;
-
 public class Tarea3 {
     
-    // ESTE EJERCICIO ES EL DE LA FILA DE UN BANCO
+    //Ejercicio Soda Fide
 
     public static void main(String[] args) {
-        Banco banco1 = new Banco();
-        banco1.menuPrincipal();
+        Soda soda1 = new Soda();
+        soda1.menuPrincipal();
     }
 }
