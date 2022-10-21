@@ -6,9 +6,9 @@ public class Trastos {
     private int platosC;
     private int cubiertos;
 
-    public Trastos(int platosC, int cubiertos) {
-        this.platosC = platosC;
-        this.cubiertos = cubiertos;
+    public Trastos() {
+        this.platosC = 0;
+        this.cubiertos = 0;
     }
 
     public int getPlatosC() {
