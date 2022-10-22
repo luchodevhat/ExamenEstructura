@@ -1,5 +1,8 @@
 package Ejercicio2;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 
 public class Pila {
     private Node cima;
@@ -113,11 +116,12 @@ public class Pila {
     public void listar() {
         // Crea una copia de la pila.
         Node aux = cima;
+        ArrayList<String> platos = new ArrayList<String>();
         // Recorre la pila hasta el ultimo node.
         while (aux != null) {
-            System.out.println("|\t" + aux.getValor() + "\t|");
-            System.out.println("-----------------");
+            platos.add("|\t" + aux.getValor() + "\t| \n");
             aux = aux.getSiguiente();
         }
+        JOptionPane.showMessageDialog(null, platos);
     }
 }
