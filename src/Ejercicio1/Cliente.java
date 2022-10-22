@@ -15,6 +15,14 @@ public class Cliente {
         this.total = total;
         this.discapacidad = discapacidad;
     }
+    
+    public Cliente() {
+        this.nombre = "";
+        this.cedula = 0;
+        this.producto = "";
+        this.total = 0;
+        this.discapacidad = false;
+    }
 
     public String getNombre() {
         return nombre;
