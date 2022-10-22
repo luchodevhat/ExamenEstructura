@@ -26,7 +26,7 @@ public class Nodo {
 
     @Override
     public String toString() {
-        return "Nodo{" + "dato=" + dato + '}';
+        return "dato = " + dato;
     }
 }
 

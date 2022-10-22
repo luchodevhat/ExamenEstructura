@@ -5,7 +5,7 @@ public class Cliente {
     private String nombre;
     private int cedula;
     private String producto;
-    private int total;
+    private double total;
     private boolean discapacidad;
 
     public Cliente(String nombre, int cedula,String producto, int total, boolean discapacidad) {
@@ -56,17 +56,17 @@ public class Cliente {
         this.producto = producto;
     }
 
-    public int getTotal() {
+    public double getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(double total) {
         this.total = total;
     }
 
     @Override
     public String toString() {
-        return "Cliente{" + "nombre=" + nombre + ", cedula=" + cedula + ", discapacidad=" + discapacidad + '}';
+        return "Cliente || " + "Nombre: " + nombre + ", cedula: " + cedula + ", discapacidad: " + discapacidad;
     }
     
 }

@@ -29,14 +29,28 @@ public class SodaFide extends javax.swing.JFrame {
         cliente.setNombre(jTextField1.getText());
         cliente.setCedula(Integer.parseInt(jTextField2.getText()));
         cliente.setProducto(jTextField3.getText());
-        cliente.setTotal(Integer.parseInt(jTextField4.getText()));
+        cliente.setTotal(Double.parseDouble(jTextField4.getText()));
         if (jCheckBox1.isSelected()) {
             cliente.setDiscapacidad(true);
             fila1.encolaD(new Nodo(cliente));
         }else{
             fila1.encola(new Nodo(cliente));
         }
-        System.out.println(fila1.toString());
+        JOptionPane.showMessageDialog(null, "Datos agregados correctamente.");
+        mostrar();
+        limpiar();
+    }
+    
+    public void mostrar(){
+        JOptionPane.showMessageDialog(null,fila1.toString());
+    }
+    
+    public void limpiar() {
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jCheckBox1.setSelected(false);
+        jTextField3.setText("");
+        jTextField4.setText("");
     }
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -57,6 +71,8 @@ public class SodaFide extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -127,6 +143,20 @@ public class SodaFide extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuBar1.add(jMenu1);
+
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/asking.png"))); // NOI18N
+        jMenu3.setToolTipText("Muestra los pedidos realizados");
+
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/asking.png"))); // NOI18N
+        jMenuItem3.setText("Mostrar pedidos");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu3);
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/salir.png"))); // NOI18N
         jMenu2.setToolTipText("Sale del programa");
@@ -250,6 +280,10 @@ public class SodaFide extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
 
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        mostrar();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -296,9 +330,11 @@ public class SodaFide extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
