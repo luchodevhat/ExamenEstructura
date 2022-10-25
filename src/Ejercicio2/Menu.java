@@ -1,6 +1,12 @@
 
 package Ejercicio2;
-
+/**
+ * @autores:
+ * Fernando
+ * Luis Alfaro
+ * Josué Villalobos
+ * Kendal Angulo
+ */
 import javax.swing.JOptionPane;
 
 

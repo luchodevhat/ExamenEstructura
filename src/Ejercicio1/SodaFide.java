@@ -2,7 +2,11 @@
 package Ejercicio1;
 
 /**
- * @author Fernando
+ * @autores:
+ * Fernando
+ * Luis Alfaro
+ * Josué Villalobos
+ * Kendal Angulo
  */
 import java.awt.Image;
 import javax.swing.ImageIcon;
